@@ -88,39 +88,29 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\Portable40\bin\Blue.MVVM.Commands.dll">
-      <Link>lib\portable-net40+sl5\Blue.MVVM.Commands.dll</Link>
+      <Link>lib\portable40\Blue.MVVM.Commands.dll</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\Portable40\bin\Blue.MVVM.Commands.pdb">
-      <Link>lib\portable-net40+sl5\Blue.MVVM.Commands.pdb</Link>
+      <Link>lib\portable40\Blue.MVVM.Commands.pdb</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\Portable40\bin\Blue.MVVM.Commands.XML">
-      <Link>lib\portable-net40+sl5\Blue.MVVM.Commands.XML</Link>
+      <Link>lib\portable40\Blue.MVVM.Commands.XML</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\Portable\bin\Blue.MVVM.Commands.dll">
-      <Link>lib\portable-net45+win+wpa81+wp80+MonoAndroid1+xamarinios10+MonoTouch1+netcore45\Blue.MVVM.Commands.dll</Link>
+      <Link>lib\portable45\Blue.MVVM.Commands.dll</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\Portable\bin\Blue.MVVM.Commands.pdb">
-      <Link>lib\portable-net45+win+wpa81+wp80+MonoAndroid1+xamarinios10+MonoTouch1+netcore45\Blue.MVVM.Commands.pdb</Link>
+      <Link>lib\portable45\Blue.MVVM.Commands.pdb</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\Portable\bin\Blue.MVVM.Commands.XML">
-      <Link>lib\portable-net45+win+wpa81+wp80+MonoAndroid1+xamarinios10+MonoTouch1+netcore45\Blue.MVVM.Commands.XML</Link>
+      <Link>lib\portable45\Blue.MVVM.Commands.XML</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Net20\Net20.csproj">
-      <Project>{75a2ee32-f59c-4403-9a04-fd6a46cc950f}</Project>
-      <Name>Net20</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Net35\Net35.csproj">
-      <Project>{0cd1cdd4-9bf4-4ad3-baab-87d4cc2ed81f}</Project>
-      <Name>Net35</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

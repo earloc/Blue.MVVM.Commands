@@ -23,6 +23,7 @@ Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		_Blue.MVVM.Commands\_Blue.MVVM.Commands.projitems*{0cd1cdd4-9bf4-4ad3-baab-87d4cc2ed81f}*SharedItemsImports = 4
 		_Blue.MVVM.Commands\_Blue.MVVM.Commands.projitems*{607f08c3-fc30-4b5f-a038-4eb418b9bdb4}*SharedItemsImports = 4
+		_Blue.MVVM.Commands\_Blue.MVVM.Commands.projitems*{75a2ee32-f59c-4403-9a04-fd6a46cc950f}*SharedItemsImports = 4
 		_Blue.MVVM.Commands\_Blue.MVVM.Commands.projitems*{9eaa4bdb-54d6-4618-8e23-17b8e8baa7a3}*SharedItemsImports = 4
 		_Blue.MVVM.Commands\_Blue.MVVM.Commands.projitems*{f0f65aad-c12e-498c-8b11-edf748d82692}*SharedItemsImports = 13
 	EndGlobalSection

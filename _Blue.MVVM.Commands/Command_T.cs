@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Windows.Input;
 
@@ -46,7 +45,7 @@ namespace Blue.MVVM.Commands {
         /// Executes the <see cref="RelayCommand{T}"/>s execution logic
         /// </summary>
         /// <param name="parameter">The parameter.</param>
-        protected override void OnExecute(T parameter) {
+        public override void Execute(T parameter) {
             _Execute(parameter);
         }
 
@@ -55,9 +54,9 @@ namespace Blue.MVVM.Commands {
         /// </summary>
         /// <param name="parameter">The parameter.</param>
         /// <returns></returns>
-        protected override bool OnCanExecute(T parameter) {
+        public override bool CanExecute(T parameter) {
             if (_CanExecute == null)
-                return base.OnCanExecute(parameter);
+                return base.CanExecute(parameter);
             return _CanExecute(parameter);
         }
 

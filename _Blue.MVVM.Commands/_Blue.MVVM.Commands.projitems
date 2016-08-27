@@ -11,7 +11,9 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)CommandBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CommandBase_T.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ICommand_T.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)INotificationCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)INotificationCommand_T.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Properties\_AssemblyInfo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Command.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Command_T.cs" />

@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Blue.MVVM.Commands</id>
-    <version>2.0.0-pre1</version>
+    <version>2.0.1-pre1</version>
     <title>Blue.MVVM.Commands</title>
     <authors>earloc</authors>
     <owners></owners>
@@ -10,7 +10,10 @@
       MVVM - bareknuckle style - Commands
     </description>
     <releaseNotes>
-      - 2.0.0-pre1 - initial extraction out of Blue.MVVM
+      - 2.0.1 - added NET20, ICommand&lt;T&gt; and INotificationCommand&lt;T&gt;
+      recently observed problems during installation into xamarin-android apps (wrong profile is chosen, leading to Commands not executing)
+      if you experience any of this behavior, give me a call! ;)
+      - 2.0.0 - initial extraction out of Blue.MVVM
     </releaseNotes>
     <!--<summary>
       A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.
@@ -31,10 +34,13 @@
     <file src="bin\lib\net35\Blue.MVVM.Commands.*"
           target="lib/net35" />
     
-    <file src="bin\lib\portable-net40+sl5\Blue.MVVM.Commands.*"
+    <file src="bin\lib\portable40\Blue.MVVM.Commands.*"
           target="lib/portable-net40+sl5" />
     
-    <file src="bin\lib\portable-net45+win+wpa81+wp80+MonoAndroid1+xamarinios10+MonoTouch1+netcore45\Blue.MVVM.Commands.*"
-          target="lib/portable-net45+win+wpa81+wp80+MonoAndroid1+xamarinios10+MonoTouch1+netcore45" />
+    <file src="bin\lib\portable45\Blue.MVVM.Commands.*"
+          target="lib/portable-net45+netcore45+wpa81+MonoAndroid1+xamarinios10+MonoTouch1" />
+
+    <file src="bin\lib\portable45\Blue.MVVM.Commands.*"
+          target="lib/MonoAndroid403" />
   </files>
 </package>

@@ -3,25 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using Blue.MVVM.Commands;
 
-
 namespace System.Windows.Input {
 
     public interface INotifyExecutionCommand : INotificationCommand {
-    }
-
-    public static class INotifyCanExecuteChangedExtensions {
-        /// <summary>
-        /// Raises the <see cref="CanExecuteChanged"/> event
-        /// </summary>
-        [Obsolete("use 'INotificationCommand.NotifyCanExecuteChanged' instead")]
-        public static void OnCanExecuteChanged(this INotifyExecutionCommand source) {
-            source.NotifyCanExecuteChanged();
-        }
-
-        [Obsolete("Xamarin backwards-compatibility, use 'INotificationCommand.NotifyCanExecuteChanged' instead")]
-        public static void ChangeCanExecute(this INotifyExecutionCommand source) {
-            source.NotifyCanExecuteChanged();
-        }
     }
 
 
@@ -44,3 +28,26 @@ namespace System.Windows.Input {
         }
     }
 }
+
+#if !NET20
+namespace System.Windows.Input {
+    public static class INotificationCommandExtensions {
+        /// <summary>
+        /// Raises the <see cref="CanExecuteChanged"/> event
+        /// </summary>
+        [Obsolete("backwards compatibility, use 'INotificationCommand.NotifyCanExecuteChanged' instead")]
+        public static void OnCanExecuteChanged(this INotifyExecutionCommand source) {
+            source.NotifyCanExecuteChanged();
+        }
+    }
+}
+namespace Blue.MVVM.Commands {
+    public static class INotificationCommandExtensions {
+        [Obsolete("Xamarin migration-compatibility, use 'INotificationCommand.NotifyCanExecuteChanged' instead")]
+        public static void ChangeCanExecute(this Blue.MVVM.Commands.INotificationCommand source) {
+            source.NotifyCanExecuteChanged();
+        }
+    }
+}
+#endif
+

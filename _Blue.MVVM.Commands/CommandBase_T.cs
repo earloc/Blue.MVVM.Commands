@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Windows.Input;
 
@@ -9,8 +8,8 @@ namespace Blue.MVVM.Commands {
     /// generic command implementation. Logic for Execute and CanExecute has to be implemented in derived types
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public abstract class CommandBase<T> : ICommand, INotifyExecutionCommand {
-
+    public abstract class CommandBase<T> : INotificationCommand<T> {
+        
         public CommandBase() {
             IsReentranceEnabled = CommandBase.IsReentranceEnabledByDefault;
         }
@@ -28,7 +27,7 @@ namespace Blue.MVVM.Commands {
                 return false;
 
             var p = Getparameter(parameter);
-            return OnCanExecute(p);
+            return CanExecute(p);
         }
 
         private T Getparameter(object parameter) {
@@ -50,7 +49,7 @@ namespace Blue.MVVM.Commands {
         /// </summary>
         /// <param name="parameter">The parameter.</param>
         /// <returns></returns>
-        protected virtual bool OnCanExecute(T parameter) {
+        public virtual bool CanExecute(T parameter) {
             return true;
         }
 
@@ -61,12 +60,12 @@ namespace Blue.MVVM.Commands {
         public void Execute(object parameter) {
             var p = Getparameter(parameter);
 
-            if (!OnCanExecute(p))
+            if (!CanExecute(p))
                 return;
 
             WhileBlockingReentrance( () => {
                 OnExecuting(p);
-                OnExecute(p);
+                Execute(p);
                 OnExecuted(p);
             });
             
@@ -76,7 +75,7 @@ namespace Blue.MVVM.Commands {
         /// In a derived class, executes the command´s logic
         /// </summary>
         /// <param name="parameter">The parameter.</param>
-        protected abstract void OnExecute(T parameter);
+        public abstract void Execute(T parameter);
 
         public void NotifyCanExecuteChanged() {
             CanExecuteChanged?.Invoke(this, EventArgs.Empty);
