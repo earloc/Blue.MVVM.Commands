@@ -65,21 +65,27 @@
   <ItemGroup>
     <Content Include="..\Portable40\bin\Blue.MVVM.AsyncCommands.dll">
       <Link>lib\portable40\Blue.MVVM.AsyncCommands.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\Portable40\bin\Blue.MVVM.AsyncCommands.pdb">
       <Link>lib\portable40\Blue.MVVM.AsyncCommands.pdb</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\Portable40\bin\Blue.MVVM.AsyncCommands.xml">
       <Link>lib\portable40\Blue.MVVM.AsyncCommands.xml</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\Portable45\bin\Blue.MVVM.AsyncCommands.dll">
       <Link>lib\portable45\Blue.MVVM.AsyncCommands.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\Portable45\bin\Blue.MVVM.AsyncCommands.pdb">
       <Link>lib\portable45\Blue.MVVM.AsyncCommands.pdb</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\Portable45\bin\Blue.MVVM.AsyncCommands.xml">
       <Link>lib\portable45\Blue.MVVM.AsyncCommands.xml</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

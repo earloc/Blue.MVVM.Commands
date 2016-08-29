@@ -49,6 +49,12 @@
       <Link>Properties\Blue.snk</Link>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Blue.MVVM.Commands\Portable45\Portable45.csproj">
+      <Project>{607f08c3-fc30-4b5f-a038-4eb418b9bdb4}</Project>
+      <Name>Portable45</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="..\_Shared\_Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

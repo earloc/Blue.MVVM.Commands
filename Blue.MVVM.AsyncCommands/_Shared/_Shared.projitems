@@ -9,6 +9,15 @@
     <Import_RootNamespace>_Blue.MVVM.Commands</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AsyncCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AsyncCommandBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AsyncCommandBase_T.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AsyncCommand_T.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IAsyncCommand_T.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IAsyncCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IAsyncNotificationCommand_T.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IAsyncNotificationCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ICommandExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Properties\_AssemblyInfo.cs" />
   </ItemGroup>
 </Project>

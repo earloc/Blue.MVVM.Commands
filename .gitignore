@@ -250,10 +250,5 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
-/_Nuget/Blue.MVVM.Commands.2.0.1-pre6.nupkg.bak
-/_Nuget/Blue.MVVM.Commands.2.0.1-pre5.nupkg.bak
-/_Nuget/Blue.MVVM.Commands.2.0.1-pre4.nupkg.bak
-/_Nuget/Blue.MVVM.Commands.2.0.1-pre3.nupkg.bak
-/_Nuget/Blue.MVVM.Commands.2.0.1-pre2.nupkg.bak
-/_Nuget/Blue.MVVM.Commands.2.0.1-pre1.nupkg.bak
-/_Nuget/Blue.MVVM.Commands.2.0.0-pre1.nupkg.bak
+
+.bak
