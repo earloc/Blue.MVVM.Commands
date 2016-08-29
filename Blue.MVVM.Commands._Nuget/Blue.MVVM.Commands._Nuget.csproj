@@ -75,6 +75,18 @@
       <Link>lib\net20\Blue.MVVM.Commands.XML</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="..\Blue.MVVM.Commands.Net30\bin\Blue.MVVM.Commands.dll">
+      <Link>lib\net30\Blue.MVVM.Commands.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Blue.MVVM.Commands.Net30\bin\Blue.MVVM.Commands.pdb">
+      <Link>lib\net30\Blue.MVVM.Commands.pdb</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Blue.MVVM.Commands.Net30\bin\Blue.MVVM.Commands.XML">
+      <Link>lib\net30\Blue.MVVM.Commands.XML</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="..\Blue.MVVM.Commands.Net35\bin\Blue.MVVM.Commands.dll">
       <Link>lib\net35\Blue.MVVM.Commands.dll</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -85,6 +97,18 @@
     </Content>
     <Content Include="..\Blue.MVVM.Commands.Net35\bin\Blue.MVVM.Commands.XML">
       <Link>lib\net35\Blue.MVVM.Commands.XML</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Blue.MVVM.Commands.Net40\bin\Blue.MVVM.Commands.dll">
+      <Link>lib\net40\Blue.MVVM.Commands.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Blue.MVVM.Commands.Net40\bin\Blue.MVVM.Commands.pdb">
+      <Link>lib\net40\Blue.MVVM.Commands.pdb</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Blue.MVVM.Commands.Net40\bin\Blue.MVVM.Commands.XML">
+      <Link>lib\net40\Blue.MVVM.Commands.XML</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\Blue.MVVM.Commands.Portable40\bin\Blue.MVVM.Commands.dll">

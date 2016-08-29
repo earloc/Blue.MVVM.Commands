@@ -29,7 +29,8 @@ namespace System.Windows.Input {
     }
 }
 
-#if !NET20
+#if !NOEXTENSIONS
+
 namespace System.Windows.Input {
     public static class INotificationCommandExtensions {
         [Obsolete("backwards compatibility, use 'INotificationCommand.NotifyCanExecuteChanged' instead")]
@@ -45,6 +46,8 @@ namespace Blue.MVVM.Commands {
             source.NotifyCanExecuteChanged();
         }
     }
+
 }
 #endif
+
 

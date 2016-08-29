@@ -1,4 +1,4 @@
-﻿#if INCLUDE_ICOMMAND
+﻿#if ICOMMAND
 using System;
 using System.Collections.Generic;
 using System.Text;

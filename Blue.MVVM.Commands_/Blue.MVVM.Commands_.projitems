@@ -19,5 +19,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Command_T.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Legacy.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)System.Windows.Input\ICommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Delegates.cs" />
   </ItemGroup>
 </Project>
