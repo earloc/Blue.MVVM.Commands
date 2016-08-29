@@ -10,6 +10,7 @@
       MVVM&lt;BareknuckleStyle&gt; - ICommand implementations
     </description>
     <releaseNotes>
+      - 2.0.2 - included ICommand Interface-Proxy
       - 2.0.1 - added NET20, ICommand&lt;T&gt; and INotificationCommand&lt;T&gt;
       recently observed problems during installation into xamarin-android apps (wrong profile is chosen, leading to Commands not executing)
       if you experience any of this behavior, give me a call! ;)
@@ -21,6 +22,10 @@
       - ootb CanExecuteChanged-notificatability via built in INotifyCanExecuteChanged
       - blocks reentrancy by default
       - high coexistentability with other implementations or frameworks
+      
+      comes with 
+      classes: Command, Command&lt;T&gt;, CommandBase and CommandBase&lt;T&gt;
+      Interfaces: ICommand&lt;&gt;, INotificationCommand and INotificationCommand&lt;T&gt;
     </summary>
     <language>en-US</language>
     <projectUrl>https://github.com/earloc/Blue.MVVM.Commands</projectUrl>

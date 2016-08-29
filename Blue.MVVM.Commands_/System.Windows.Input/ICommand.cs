@@ -5,6 +5,7 @@ using System.Text;
 
 namespace System.Windows.Input {
 
+    /// <remarks>System.Windows.Input</remarks>
     public interface ICommand {
         // Summary:
         //     Occurs when changes occur that affect whether or not the command should execute.

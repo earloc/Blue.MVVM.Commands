@@ -7,11 +7,13 @@
     <authors>earloc</authors>
     <owners></owners>
     <description>
-      MVVM&lt;BareknuckleStyle&gt;- async ICommand extensions
+      MVVM&lt;BareknuckleStyle&gt; - async ICommand extensions
     </description>
     <releaseNotes>
+      0.0.1 - initial release
     </releaseNotes>
     <summary>
+      Execute commands in an async aware manner
     </summary>
     <language>en-US</language>
     <projectUrl>https://github.com/earloc/Blue.MVVM.Commands</projectUrl>
