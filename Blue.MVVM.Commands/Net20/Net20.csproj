@@ -35,7 +35,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>..\_Blue.MVVM.Commands\Blue.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\_Shared\Blue.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -43,18 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\_Blue.MVVM.Commands\ICommand.cs">
+    <Compile Include="..\_Shared\ICommand.cs">
       <Link>System.Windows.Input\ICommand.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="System\BackPortability.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\_Blue.MVVM.Commands\Blue.snk">
+    <None Include="..\_Shared\Blue.snk">
       <Link>Properties\Blue.snk</Link>
     </None>
   </ItemGroup>
-  <Import Project="..\_Blue.MVVM.Commands\_Blue.MVVM.Commands.projitems" Label="Shared" />
+  <Import Project="..\_Shared\_Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

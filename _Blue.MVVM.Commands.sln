@@ -3,29 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Nuget", "_Nuget\_Nuget.csproj", "{0451BAEF-DF2E-4B98-8644-94EE9415E389}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Nuget", "Blue.MVVM.Commands\_Nuget\_Nuget.csproj", "{0451BAEF-DF2E-4B98-8644-94EE9415E389}"
 	ProjectSection(ProjectDependencies) = postProject
 		{607F08C3-FC30-4B5F-A038-4EB418B9BDB4} = {607F08C3-FC30-4B5F-A038-4EB418B9BDB4}
 		{9EAA4BDB-54D6-4618-8E23-17B8E8BAA7A3} = {9EAA4BDB-54D6-4618-8E23-17B8E8BAA7A3}
 	EndProjectSection
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "_Blue.MVVM.Commands", "_Blue.MVVM.Commands\_Blue.MVVM.Commands.shproj", "{F0F65AAD-C12E-498C-8B11-EDF748D82692}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "_Shared", "Blue.MVVM.Commands\_Shared\_Shared.shproj", "{F0F65AAD-C12E-498C-8B11-EDF748D82692}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portable", "Portable\Portable.csproj", "{607F08C3-FC30-4B5F-A038-4EB418B9BDB4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portable45", "Blue.MVVM.Commands\Portable45\Portable45.csproj", "{607F08C3-FC30-4B5F-A038-4EB418B9BDB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portable40", "Portable40\Portable40.csproj", "{9EAA4BDB-54D6-4618-8E23-17B8E8BAA7A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portable40", "Blue.MVVM.Commands\Portable40\Portable40.csproj", "{9EAA4BDB-54D6-4618-8E23-17B8E8BAA7A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net35", "Net35\Net35.csproj", "{0CD1CDD4-9BF4-4AD3-BAAB-87D4CC2ED81F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net35", "Blue.MVVM.Commands\Net35\Net35.csproj", "{0CD1CDD4-9BF4-4AD3-BAAB-87D4CC2ED81F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net20", "Net20\Net20.csproj", "{75A2EE32-F59C-4403-9A04-FD6A46CC950F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net20", "Blue.MVVM.Commands\Net20\Net20.csproj", "{75A2EE32-F59C-4403-9A04-FD6A46CC950F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commands", "Commands", "{9BE821BD-BC0A-46B1-8C36-7C7863405246}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		_Blue.MVVM.Commands\_Blue.MVVM.Commands.projitems*{0cd1cdd4-9bf4-4ad3-baab-87d4cc2ed81f}*SharedItemsImports = 4
-		_Blue.MVVM.Commands\_Blue.MVVM.Commands.projitems*{607f08c3-fc30-4b5f-a038-4eb418b9bdb4}*SharedItemsImports = 4
-		_Blue.MVVM.Commands\_Blue.MVVM.Commands.projitems*{75a2ee32-f59c-4403-9a04-fd6a46cc950f}*SharedItemsImports = 4
-		_Blue.MVVM.Commands\_Blue.MVVM.Commands.projitems*{9eaa4bdb-54d6-4618-8e23-17b8e8baa7a3}*SharedItemsImports = 4
-		_Blue.MVVM.Commands\_Blue.MVVM.Commands.projitems*{f0f65aad-c12e-498c-8b11-edf748d82692}*SharedItemsImports = 13
+		Blue.MVVM.Commands\_Shared\_Shared.projitems*{0cd1cdd4-9bf4-4ad3-baab-87d4cc2ed81f}*SharedItemsImports = 4
+		Blue.MVVM.Commands\_Shared\_Shared.projitems*{607f08c3-fc30-4b5f-a038-4eb418b9bdb4}*SharedItemsImports = 4
+		Blue.MVVM.Commands\_Shared\_Shared.projitems*{75a2ee32-f59c-4403-9a04-fd6a46cc950f}*SharedItemsImports = 4
+		Blue.MVVM.Commands\_Shared\_Shared.projitems*{9eaa4bdb-54d6-4618-8e23-17b8e8baa7a3}*SharedItemsImports = 4
+		Blue.MVVM.Commands\_Shared\_Shared.projitems*{f0f65aad-c12e-498c-8b11-edf748d82692}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,5 +57,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389} = {9BE821BD-BC0A-46B1-8C36-7C7863405246}
+		{F0F65AAD-C12E-498C-8B11-EDF748D82692} = {9BE821BD-BC0A-46B1-8C36-7C7863405246}
+		{607F08C3-FC30-4B5F-A038-4EB418B9BDB4} = {9BE821BD-BC0A-46B1-8C36-7C7863405246}
+		{9EAA4BDB-54D6-4618-8E23-17B8E8BAA7A3} = {9BE821BD-BC0A-46B1-8C36-7C7863405246}
+		{0CD1CDD4-9BF4-4AD3-BAAB-87D4CC2ED81F} = {9BE821BD-BC0A-46B1-8C36-7C7863405246}
+		{75A2EE32-F59C-4403-9A04-FD6A46CC950F} = {9BE821BD-BC0A-46B1-8C36-7C7863405246}
 	EndGlobalSection
 EndGlobal
