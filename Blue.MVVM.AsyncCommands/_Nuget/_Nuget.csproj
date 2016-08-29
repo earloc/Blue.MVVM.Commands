@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0451BAEF-DF2E-4B98-8644-94EE9415E389}</ProjectGuid>
+    <ProjectGuid>{4DC76A4A-7BE4-4795-96CD-58D3FB2824C0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>_Nuget</RootNamespace>
@@ -63,53 +63,23 @@
     <Folder Include="src\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\Net20\bin\Blue.MVVM.Commands.dll">
-      <Link>lib\net20\Blue.MVVM.Commands.dll</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="..\Portable40\bin\Blue.MVVM.AsyncCommands.dll">
+      <Link>lib\portable40\Blue.MVVM.AsyncCommands.dll</Link>
     </Content>
-    <Content Include="..\Net20\bin\Blue.MVVM.Commands.pdb">
-      <Link>lib\net20\Blue.MVVM.Commands.pdb</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="..\Portable40\bin\Blue.MVVM.AsyncCommands.pdb">
+      <Link>lib\portable40\Blue.MVVM.AsyncCommands.pdb</Link>
     </Content>
-    <Content Include="..\Net20\bin\Blue.MVVM.Commands.XML">
-      <Link>lib\net20\Blue.MVVM.Commands.XML</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="..\Portable40\bin\Blue.MVVM.AsyncCommands.xml">
+      <Link>lib\portable40\Blue.MVVM.AsyncCommands.xml</Link>
     </Content>
-    <Content Include="..\Net35\bin\Blue.MVVM.Commands.dll">
-      <Link>lib\net35\Blue.MVVM.Commands.dll</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="..\Portable45\bin\Blue.MVVM.AsyncCommands.dll">
+      <Link>lib\portable45\Blue.MVVM.AsyncCommands.dll</Link>
     </Content>
-    <Content Include="..\Net35\bin\Blue.MVVM.Commands.pdb">
-      <Link>lib\net35\Blue.MVVM.Commands.pdb</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="..\Portable45\bin\Blue.MVVM.AsyncCommands.pdb">
+      <Link>lib\portable45\Blue.MVVM.AsyncCommands.pdb</Link>
     </Content>
-    <Content Include="..\Net35\bin\Blue.MVVM.Commands.XML">
-      <Link>lib\net35\Blue.MVVM.Commands.XML</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Portable40\bin\Blue.MVVM.Commands.dll">
-      <Link>lib\portable40\Blue.MVVM.Commands.dll</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Portable40\bin\Blue.MVVM.Commands.pdb">
-      <Link>lib\portable40\Blue.MVVM.Commands.pdb</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Portable40\bin\Blue.MVVM.Commands.XML">
-      <Link>lib\portable40\Blue.MVVM.Commands.XML</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Portable45\bin\Blue.MVVM.Commands.dll">
-      <Link>lib\portable45\Blue.MVVM.Commands.dll</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Portable45\bin\Blue.MVVM.Commands.pdb">
-      <Link>lib\portable45\Blue.MVVM.Commands.pdb</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\Portable45\bin\Blue.MVVM.Commands.XML">
-      <Link>lib\portable45\Blue.MVVM.Commands.XML</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="..\Portable45\bin\Blue.MVVM.AsyncCommands.xml">
+      <Link>lib\portable45\Blue.MVVM.AsyncCommands.xml</Link>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
