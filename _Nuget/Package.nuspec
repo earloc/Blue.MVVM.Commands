@@ -2,12 +2,12 @@
 <package >
   <metadata>
     <id>Blue.MVVM.Commands</id>
-    <version>2.0.1-pre1</version>
+    <version>2.0.2-pre1</version>
     <title>Blue.MVVM.Commands</title>
     <authors>earloc</authors>
     <owners></owners>
     <description>
-      MVVM - bareknuckle style - Commands
+      MVVM - bareknuckle style - ICommand implementations
     </description>
     <releaseNotes>
       - 2.0.1 - added NET20, ICommand&lt;T&gt; and INotificationCommand&lt;T&gt;
@@ -15,9 +15,13 @@
       if you experience any of this behavior, give me a call! ;)
       - 2.0.0 - initial extraction out of Blue.MVVM
     </releaseNotes>
-    <!--<summary>
-      A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.
-    </summary>-->
+    <summary>
+      - broad backwards compatibility (back to .NET 2.0, SL5 via back-ported ICommand)
+      - typed execution via ICommand&lt;T&gt;
+      - ootb CanExecuteChanged-notificatability via built in INotifyCanExecuteChanged
+      - blocks reentrancy by default
+      - high coexistentability with other implementations or frameworks
+    </summary>
     <language>en-US</language>
     <projectUrl>https://github.com/earloc/Blue.MVVM.Commands</projectUrl>
     <iconUrl>http://oi60.tinypic.com/wl6c7a.jpg</iconUrl>
@@ -25,7 +29,7 @@
     <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
     <copyright>Copyright nobody in particular 2014 - 2016</copyright>
     <references></references>
-    <tags></tags>
+    <tags>Blue MVVM Command RelayCommand ICommand</tags>
   </metadata>
   <files>
     <file src="bin\lib\net20\Blue.MVVM.Commands.*"
@@ -34,13 +38,19 @@
     <file src="bin\lib\net35\Blue.MVVM.Commands.*"
           target="lib/net35" />
     
-    <file src="bin\lib\portable40\Blue.MVVM.Commands.*"
-          target="lib/portable-net40+sl5" />
-    
     <file src="bin\lib\portable45\Blue.MVVM.Commands.*"
           target="lib/portable-net45+netcore45+wpa81+MonoAndroid1+xamarinios10+MonoTouch1" />
 
     <file src="bin\lib\portable45\Blue.MVVM.Commands.*"
           target="lib/MonoAndroid403" />
+
+    <file src="bin\lib\portable45\Blue.MVVM.Commands.*"
+          target="lib/net45" />
+
+    <file src="bin\lib\portable45\Blue.MVVM.Commands.*"
+          target="lib/net46" />
+
+    <file src="bin\lib\portable40\Blue.MVVM.Commands.*"
+          target="lib/portable-net40+sl5" />
   </files>
 </package>
