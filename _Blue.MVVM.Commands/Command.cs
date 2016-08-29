@@ -9,7 +9,7 @@ namespace Blue.MVVM.Commands {
     /// </summary>
     public class Command : Command<object> {
         /// <summary>
-        /// Initializes a new instance of the <see cref="RelayCommand"/> class.
+        /// Initializes a new instance of the <see cref="Command"/> class.
         /// </summary>
         /// <param name="execute">the execution-logic of the command</param>
         /// <param name="canExecute">The <see cref="System.Func{T}"/> determining if the command can be executed</param>

@@ -21,13 +21,31 @@ namespace Blue.MVVM.Commands {
         /// <returns>
         /// true if this command can be executed; otherwise, false.
         /// </returns>
-        public bool CanExecute(object parameter) {
+        bool ICommand.CanExecute(object parameter) {
 
             if (!IsReentranceEnabled && _IsExecuting)
                 return false;
 
             var p = Getparameter(parameter);
             return CanExecute(p);
+        }
+
+        /// <summary>
+        /// Defines the method to be called when the command is invoked.
+        /// </summary>
+        /// <param name="parameter">Data used by the command.  If the command does not require data to be passed, this object can be set to null.</param>
+        void ICommand.Execute(object parameter) {
+            var p = Getparameter(parameter);
+
+            if (!CanExecute(p))
+                return;
+
+            WhileBlockingReentrance(() => {
+                OnExecuting(p);
+                Execute(p);
+                OnExecuted(p);
+            });
+
         }
 
         private T Getparameter(object parameter) {
@@ -51,24 +69,6 @@ namespace Blue.MVVM.Commands {
         /// <returns></returns>
         public virtual bool CanExecute(T parameter) {
             return true;
-        }
-
-        /// <summary>
-        /// Defines the method to be called when the command is invoked.
-        /// </summary>
-        /// <param name="parameter">Data used by the command.  If the command does not require data to be passed, this object can be set to null.</param>
-        public void Execute(object parameter) {
-            var p = Getparameter(parameter);
-
-            if (!CanExecute(p))
-                return;
-
-            WhileBlockingReentrance( () => {
-                OnExecuting(p);
-                Execute(p);
-                OnExecuted(p);
-            });
-            
         }
 
         /// <summary>

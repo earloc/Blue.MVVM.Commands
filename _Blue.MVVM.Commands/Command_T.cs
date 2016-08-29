@@ -11,7 +11,7 @@ namespace Blue.MVVM.Commands {
     public class Command<T> : CommandBase<T> {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="RelayCommand{T}"/> class.
+        /// Initializes a new instance of the <see cref="Command{T}"/> class.
         /// </summary>
         /// <param name="execute">the execution-logic of the command</param>
         /// <param name="canExecute">The <see cref="Func{T}"/> determining if the command can be executed</param>
@@ -25,7 +25,7 @@ namespace Blue.MVVM.Commands {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="RelayCommand{T}"/> class.
+        /// Initializes a new instance of the <see cref="Command{T}"/> class.
         /// </summary>
         /// <param name="execute">the execution-logic of the command</param>
         /// <param name="canExecute">The <see cref="Func{T}"/> determining if the command can be executed</param>
@@ -42,7 +42,7 @@ namespace Blue.MVVM.Commands {
         }
 
         /// <summary>
-        /// Executes the <see cref="RelayCommand{T}"/>s execution logic
+        /// Executes the <see cref="Command{T}"/>s execution logic
         /// </summary>
         /// <param name="parameter">The parameter.</param>
         public override void Execute(T parameter) {
@@ -50,7 +50,7 @@ namespace Blue.MVVM.Commands {
         }
 
         /// <summary>
-        /// returns the result of the <see cref="RelayCommand{T}"/>s CanExecute logic
+        /// returns the result of the <see cref="Command{T}"/>s CanExecute logic
         /// </summary>
         /// <param name="parameter">The parameter.</param>
         /// <returns></returns>
