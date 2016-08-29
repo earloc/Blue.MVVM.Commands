@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Nuget", "Blue.MVVM.Commands\_Nuget\_Nuget.csproj", "{0451BAEF-DF2E-4B98-8644-94EE9415E389}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blue.MVVM.Commands.Net20", "Blue.MVVM.Commands.Net20\Blue.MVVM.Commands.Net20.csproj", "{75A2EE32-F59C-4403-9A04-FD6A46CC950F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blue.MVVM.Commands.Net35", "Blue.MVVM.Commands.Net35\Blue.MVVM.Commands.Net35.csproj", "{0CD1CDD4-9BF4-4AD3-BAAB-87D4CC2ED81F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blue.MVVM.Commands.Portable40", "Blue.MVVM.Commands.Portable40\Blue.MVVM.Commands.Portable40.csproj", "{9EAA4BDB-54D6-4618-8E23-17B8E8BAA7A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blue.MVVM.Commands.Portable45", "Blue.MVVM.Commands.Portable45\Blue.MVVM.Commands.Portable45.csproj", "{607F08C3-FC30-4B5F-A038-4EB418B9BDB4}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Blue.MVVM.Commands_", "Blue.MVVM.Commands_\Blue.MVVM.Commands_.shproj", "{F0F65AAD-C12E-498C-8B11-EDF748D82692}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blue.MVVM.Commands._Nuget", "Blue.MVVM.Commands._Nuget\Blue.MVVM.Commands._Nuget.csproj", "{0451BAEF-DF2E-4B98-8644-94EE9415E389}"
 	ProjectSection(ProjectDependencies) = postProject
 		{75A2EE32-F59C-4403-9A04-FD6A46CC950F} = {75A2EE32-F59C-4403-9A04-FD6A46CC950F}
 		{607F08C3-FC30-4B5F-A038-4EB418B9BDB4} = {607F08C3-FC30-4B5F-A038-4EB418B9BDB4}
@@ -11,94 +21,64 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Nuget", "Blue.MVVM.Command
 		{9EAA4BDB-54D6-4618-8E23-17B8E8BAA7A3} = {9EAA4BDB-54D6-4618-8E23-17B8E8BAA7A3}
 	EndProjectSection
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "_Shared", "Blue.MVVM.Commands\_Shared\_Shared.shproj", "{F0F65AAD-C12E-498C-8B11-EDF748D82692}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Blue.MVVM.AsyncCommands_", "Blue.MVVM.AsyncCommands_\Blue.MVVM.AsyncCommands_.shproj", "{C1A8195E-36C1-4D4D-BB93-E6D5B8E96695}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portable45", "Blue.MVVM.Commands\Portable45\Portable45.csproj", "{607F08C3-FC30-4B5F-A038-4EB418B9BDB4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blue.MVVM.AsyncCommands._Nuget", "Blue.MVVM.AsyncCommands._Nuget\Blue.MVVM.AsyncCommands._Nuget.csproj", "{4DC76A4A-7BE4-4795-96CD-58D3FB2824C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portable40", "Blue.MVVM.Commands\Portable40\Portable40.csproj", "{9EAA4BDB-54D6-4618-8E23-17B8E8BAA7A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blue.MVVM.AsyncCommands.Portable40", "Blue.MVVM.AsyncCommands.Portable40\Blue.MVVM.AsyncCommands.Portable40.csproj", "{19CA4640-B40D-4D30-8EA8-0E6CE841B343}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net35", "Blue.MVVM.Commands\Net35\Net35.csproj", "{0CD1CDD4-9BF4-4AD3-BAAB-87D4CC2ED81F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net20", "Blue.MVVM.Commands\Net20\Net20.csproj", "{75A2EE32-F59C-4403-9A04-FD6A46CC950F}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commands", "Commands", "{9BE821BD-BC0A-46B1-8C36-7C7863405246}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AsyncCommands", "AsyncCommands", "{C7B284C5-E519-4E92-B551-D706E3364E1C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Nuget", "Blue.MVVM.AsyncCommands\_Nuget\_Nuget.csproj", "{4DC76A4A-7BE4-4795-96CD-58D3FB2824C0}"
-	ProjectSection(ProjectDependencies) = postProject
-		{19CA4640-B40D-4D30-8EA8-0E6CE841B343} = {19CA4640-B40D-4D30-8EA8-0E6CE841B343}
-		{1CFB3CB3-A7A7-4CBD-A3C4-5887F34C9712} = {1CFB3CB3-A7A7-4CBD-A3C4-5887F34C9712}
-	EndProjectSection
-EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "_Shared", "Blue.MVVM.AsyncCommands\_Shared\_Shared.shproj", "{C1A8195E-36C1-4D4D-BB93-E6D5B8E96695}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portable45", "Blue.MVVM.AsyncCommands\Portable45\Portable45.csproj", "{1CFB3CB3-A7A7-4CBD-A3C4-5887F34C9712}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portable40", "Blue.MVVM.AsyncCommands\Portable40\Portable40.csproj", "{19CA4640-B40D-4D30-8EA8-0E6CE841B343}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blue.MVVM.AsyncCommands.Portable45", "Blue.MVVM.AsyncCommands.Portable45\Blue.MVVM.AsyncCommands.Portable45.csproj", "{1CFB3CB3-A7A7-4CBD-A3C4-5887F34C9712}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		Blue.MVVM.Commands\_Shared\_Shared.projitems*{0cd1cdd4-9bf4-4ad3-baab-87d4cc2ed81f}*SharedItemsImports = 4
-		Blue.MVVM.AsyncCommands\_Shared\_Shared.projitems*{19ca4640-b40d-4d30-8ea8-0e6ce841b343}*SharedItemsImports = 4
-		Blue.MVVM.AsyncCommands\_Shared\_Shared.projitems*{1cfb3cb3-a7a7-4cbd-a3c4-5887f34c9712}*SharedItemsImports = 4
-		Blue.MVVM.Commands\_Shared\_Shared.projitems*{607f08c3-fc30-4b5f-a038-4eb418b9bdb4}*SharedItemsImports = 4
-		Blue.MVVM.Commands\_Shared\_Shared.projitems*{75a2ee32-f59c-4403-9a04-fd6a46cc950f}*SharedItemsImports = 4
-		Blue.MVVM.Commands\_Shared\_Shared.projitems*{9eaa4bdb-54d6-4618-8e23-17b8e8baa7a3}*SharedItemsImports = 4
-		Blue.MVVM.AsyncCommands\_Shared\_Shared.projitems*{c1a8195e-36c1-4d4d-bb93-e6d5b8e96695}*SharedItemsImports = 13
-		Blue.MVVM.Commands\_Shared\_Shared.projitems*{f0f65aad-c12e-498c-8b11-edf748d82692}*SharedItemsImports = 13
+		Blue.MVVM.Commands_\Blue.MVVM.Commands_.projitems*{0cd1cdd4-9bf4-4ad3-baab-87d4cc2ed81f}*SharedItemsImports = 4
+		Blue.MVVM.AsyncCommands_\Blue.MVVM.AsyncCommands_.projitems*{19ca4640-b40d-4d30-8ea8-0e6ce841b343}*SharedItemsImports = 4
+		Blue.MVVM.AsyncCommands_\Blue.MVVM.AsyncCommands_.projitems*{1cfb3cb3-a7a7-4cbd-a3c4-5887f34c9712}*SharedItemsImports = 4
+		Blue.MVVM.Commands_\Blue.MVVM.Commands_.projitems*{607f08c3-fc30-4b5f-a038-4eb418b9bdb4}*SharedItemsImports = 4
+		Blue.MVVM.Commands_\Blue.MVVM.Commands_.projitems*{75a2ee32-f59c-4403-9a04-fd6a46cc950f}*SharedItemsImports = 4
+		Blue.MVVM.Commands_\Blue.MVVM.Commands_.projitems*{9eaa4bdb-54d6-4618-8e23-17b8e8baa7a3}*SharedItemsImports = 4
+		Blue.MVVM.AsyncCommands_\Blue.MVVM.AsyncCommands_.projitems*{c1a8195e-36c1-4d4d-bb93-e6d5b8e96695}*SharedItemsImports = 13
+		Blue.MVVM.Commands_\Blue.MVVM.Commands_.projitems*{f0f65aad-c12e-498c-8b11-edf748d82692}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.Build.0 = Release|Any CPU
-		{607F08C3-FC30-4B5F-A038-4EB418B9BDB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{607F08C3-FC30-4B5F-A038-4EB418B9BDB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{607F08C3-FC30-4B5F-A038-4EB418B9BDB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{607F08C3-FC30-4B5F-A038-4EB418B9BDB4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9EAA4BDB-54D6-4618-8E23-17B8E8BAA7A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9EAA4BDB-54D6-4618-8E23-17B8E8BAA7A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9EAA4BDB-54D6-4618-8E23-17B8E8BAA7A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9EAA4BDB-54D6-4618-8E23-17B8E8BAA7A3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0CD1CDD4-9BF4-4AD3-BAAB-87D4CC2ED81F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0CD1CDD4-9BF4-4AD3-BAAB-87D4CC2ED81F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0CD1CDD4-9BF4-4AD3-BAAB-87D4CC2ED81F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0CD1CDD4-9BF4-4AD3-BAAB-87D4CC2ED81F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{75A2EE32-F59C-4403-9A04-FD6A46CC950F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{75A2EE32-F59C-4403-9A04-FD6A46CC950F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75A2EE32-F59C-4403-9A04-FD6A46CC950F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75A2EE32-F59C-4403-9A04-FD6A46CC950F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CD1CDD4-9BF4-4AD3-BAAB-87D4CC2ED81F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CD1CDD4-9BF4-4AD3-BAAB-87D4CC2ED81F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CD1CDD4-9BF4-4AD3-BAAB-87D4CC2ED81F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CD1CDD4-9BF4-4AD3-BAAB-87D4CC2ED81F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EAA4BDB-54D6-4618-8E23-17B8E8BAA7A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EAA4BDB-54D6-4618-8E23-17B8E8BAA7A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EAA4BDB-54D6-4618-8E23-17B8E8BAA7A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EAA4BDB-54D6-4618-8E23-17B8E8BAA7A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{607F08C3-FC30-4B5F-A038-4EB418B9BDB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{607F08C3-FC30-4B5F-A038-4EB418B9BDB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{607F08C3-FC30-4B5F-A038-4EB418B9BDB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{607F08C3-FC30-4B5F-A038-4EB418B9BDB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4DC76A4A-7BE4-4795-96CD-58D3FB2824C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4DC76A4A-7BE4-4795-96CD-58D3FB2824C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DC76A4A-7BE4-4795-96CD-58D3FB2824C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DC76A4A-7BE4-4795-96CD-58D3FB2824C0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1CFB3CB3-A7A7-4CBD-A3C4-5887F34C9712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1CFB3CB3-A7A7-4CBD-A3C4-5887F34C9712}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1CFB3CB3-A7A7-4CBD-A3C4-5887F34C9712}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1CFB3CB3-A7A7-4CBD-A3C4-5887F34C9712}.Release|Any CPU.Build.0 = Release|Any CPU
 		{19CA4640-B40D-4D30-8EA8-0E6CE841B343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{19CA4640-B40D-4D30-8EA8-0E6CE841B343}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19CA4640-B40D-4D30-8EA8-0E6CE841B343}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19CA4640-B40D-4D30-8EA8-0E6CE841B343}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CFB3CB3-A7A7-4CBD-A3C4-5887F34C9712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CFB3CB3-A7A7-4CBD-A3C4-5887F34C9712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CFB3CB3-A7A7-4CBD-A3C4-5887F34C9712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CFB3CB3-A7A7-4CBD-A3C4-5887F34C9712}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{0451BAEF-DF2E-4B98-8644-94EE9415E389} = {9BE821BD-BC0A-46B1-8C36-7C7863405246}
-		{F0F65AAD-C12E-498C-8B11-EDF748D82692} = {9BE821BD-BC0A-46B1-8C36-7C7863405246}
-		{607F08C3-FC30-4B5F-A038-4EB418B9BDB4} = {9BE821BD-BC0A-46B1-8C36-7C7863405246}
-		{9EAA4BDB-54D6-4618-8E23-17B8E8BAA7A3} = {9BE821BD-BC0A-46B1-8C36-7C7863405246}
-		{0CD1CDD4-9BF4-4AD3-BAAB-87D4CC2ED81F} = {9BE821BD-BC0A-46B1-8C36-7C7863405246}
-		{75A2EE32-F59C-4403-9A04-FD6A46CC950F} = {9BE821BD-BC0A-46B1-8C36-7C7863405246}
-		{4DC76A4A-7BE4-4795-96CD-58D3FB2824C0} = {C7B284C5-E519-4E92-B551-D706E3364E1C}
-		{C1A8195E-36C1-4D4D-BB93-E6D5B8E96695} = {C7B284C5-E519-4E92-B551-D706E3364E1C}
-		{1CFB3CB3-A7A7-4CBD-A3C4-5887F34C9712} = {C7B284C5-E519-4E92-B551-D706E3364E1C}
-		{19CA4640-B40D-4D30-8EA8-0E6CE841B343} = {C7B284C5-E519-4E92-B551-D706E3364E1C}
 	EndGlobalSection
 EndGlobal
