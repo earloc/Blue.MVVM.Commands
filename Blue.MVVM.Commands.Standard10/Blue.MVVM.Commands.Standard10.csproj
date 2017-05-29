@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.0</TargetFramework>
+    <AssemblyName>Blue.MVVM.Commands</AssemblyName>
+    <RootNamespace>Blue.MVVM.Commands</RootNamespace>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <FileVersion>3.0.0.0</FileVersion>
+    <Copyright>Copyright © nobody in particular 2014 - 2017</Copyright>
+    <Product>Blue.MVVM</Product>
+    <Version>3.0.0</Version>
+    <Authors>earloc@live.de</Authors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>bin\netstandard1.0\Blue.MVVM.Commands.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>bin\netstandard1.0\Blue.MVVM.Commands.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <Import Project="..\Blue.MVVM.Commands_\Blue.MVVM.Commands_.projitems" Label="Shared" />
+
+</Project>

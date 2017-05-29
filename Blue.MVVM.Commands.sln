@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blue.MVVM.Commands.Net20", "Blue.MVVM.Commands.Net20\Blue.MVVM.Commands.Net20.csproj", "{75A2EE32-F59C-4403-9A04-FD6A46CC950F}"
 EndProject
@@ -15,15 +15,20 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Blue.MVVM.Commands_", "Blue
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blue.MVVM.Commands._NuGet", "Blue.MVVM.Commands._Nuget\Blue.MVVM.Commands._NuGet.csproj", "{0451BAEF-DF2E-4B98-8644-94EE9415E389}"
 	ProjectSection(ProjectDependencies) = postProject
+		{C6EBBE24-B7A0-48B9-AE26-72A37726F7AE} = {C6EBBE24-B7A0-48B9-AE26-72A37726F7AE}
 		{75A2EE32-F59C-4403-9A04-FD6A46CC950F} = {75A2EE32-F59C-4403-9A04-FD6A46CC950F}
+		{874703AF-089E-43E4-9E6F-00F4DF6AF2F6} = {874703AF-089E-43E4-9E6F-00F4DF6AF2F6}
 		{607F08C3-FC30-4B5F-A038-4EB418B9BDB4} = {607F08C3-FC30-4B5F-A038-4EB418B9BDB4}
 		{0CD1CDD4-9BF4-4AD3-BAAB-87D4CC2ED81F} = {0CD1CDD4-9BF4-4AD3-BAAB-87D4CC2ED81F}
 		{9EAA4BDB-54D6-4618-8E23-17B8E8BAA7A3} = {9EAA4BDB-54D6-4618-8E23-17B8E8BAA7A3}
+		{D76F16F9-AD1F-4338-B3B1-5D0F4CD8309C} = {D76F16F9-AD1F-4338-B3B1-5D0F4CD8309C}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blue.MVVM.Commands.Net40", "Blue.MVVM.Commands.Net40\Blue.MVVM.Commands.Net40.csproj", "{D76F16F9-AD1F-4338-B3B1-5D0F4CD8309C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blue.MVVM.Commands.Net30", "Blue.MVVM.Commands.Net30\Blue.MVVM.Commands.Net30.csproj", "{C6EBBE24-B7A0-48B9-AE26-72A37726F7AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blue.MVVM.Commands.Standard10", "Blue.MVVM.Commands.Standard10\Blue.MVVM.Commands.Standard10.csproj", "{874703AF-089E-43E4-9E6F-00F4DF6AF2F6}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -68,6 +73,10 @@ Global
 		{C6EBBE24-B7A0-48B9-AE26-72A37726F7AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6EBBE24-B7A0-48B9-AE26-72A37726F7AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6EBBE24-B7A0-48B9-AE26-72A37726F7AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{874703AF-089E-43E4-9E6F-00F4DF6AF2F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{874703AF-089E-43E4-9E6F-00F4DF6AF2F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{874703AF-089E-43E4-9E6F-00F4DF6AF2F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{874703AF-089E-43E4-9E6F-00F4DF6AF2F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

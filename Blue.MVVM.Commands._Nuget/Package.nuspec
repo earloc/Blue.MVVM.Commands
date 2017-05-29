@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Blue.MVVM.Commands</id>
-    <version>2.1.0-pre3</version>
+    <version>3.0.0</version>
     <title>Blue.MVVM.Commands</title>
     <authors>earloc</authors>
     <owners></owners>
@@ -10,6 +10,7 @@
       MVVM&lt;BareKnuckleStyle&gt;  - ICommand implementations
     </description>
     <releaseNotes>
+      - 3.0.0 - added support for netstandard1.0
       - 2.1.0 - added explicit assemblies for .NET 3.0 and 4.0
       - 2.0.1 - added NET20, ICommand&lt;T&gt; and INotificationCommand&lt;T&gt;
       recently observed problems during installation into xamarin-android apps (wrong profile is chosen, leading to Commands not executing)
@@ -22,8 +23,8 @@
       - ootb CanExecuteChanged-notificatability via built in INotifyCanExecuteChanged
       - blocks reentrancy by default
       - high coexistentability with other implementations or frameworks
-      
-      comes with 
+
+      comes with
       classes: Command, Command&lt;T&gt;, CommandBase and CommandBase&lt;T&gt;
       Interfaces: ICommand&lt;&gt;, INotificationCommand and INotificationCommand&lt;T&gt;
     </summary>
@@ -31,37 +32,31 @@
     <projectUrl>https://github.com/earloc/Blue.MVVM.Commands</projectUrl>
     <iconUrl>http://oi60.tinypic.com/wl6c7a.jpg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
-    <copyright>Copyright nobody in particular 2014 - 2016</copyright>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <copyright>Copyright nobody in particular 2014 - 2017</copyright>
     <references></references>
     <tags>Blue MVVM Command RelayCommand ICommand</tags>
   </metadata>
   <files>
     <file src="bin\lib\net20\Blue.MVVM.Commands.*"
-          target="lib/net20" />
+          target="lib\net20" />
 
     <file src="bin\lib\net30\Blue.MVVM.Commands.*"
-          target="lib/net30" />
-    
+          target="lib\net30" />
+
     <file src="bin\lib\net35\Blue.MVVM.Commands.*"
-          target="lib/net35" />
+          target="lib\net35" />
 
     <file src="bin\lib\net40\Blue.MVVM.Commands.*"
-          target="lib/net40" />
-   
-    <file src="bin\lib\portable45\Blue.MVVM.Commands.*"
-          target="lib/MonoAndroid403" />
-    
-    <file src="bin\lib\portable45\Blue.MVVM.Commands.*"
-          target="lib/net45" />
+          target="lib\net40" />
 
     <file src="bin\lib\portable45\Blue.MVVM.Commands.*"
-          target="lib/net46" />
+          target="lib\MonoAndroid403" />
 
-    <file src="bin\lib\portable45\Blue.MVVM.Commands.*"
-          target="lib/portable-net45+netcore45+wpa81+MonoAndroid1+xamarinios10+MonoTouch1" />
-    
     <file src="bin\lib\portable40\Blue.MVVM.Commands.*"
-          target="lib/portable-net40+sl5" />
+          target="lib\portable-net40+sl5" />
+
+    <file src="bin\lib\netstandard10\Blue.MVVM.Commands.*" 
+          target="lib\netstandard1.0" />
   </files>
 </package>
