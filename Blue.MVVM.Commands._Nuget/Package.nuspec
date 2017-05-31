@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Blue.MVVM.Commands</id>
-    <version>3.0.0</version>
+    <version>3.0.1</version>
     <title>Blue.MVVM.Commands</title>
     <authors>earloc</authors>
     <owners></owners>
@@ -10,6 +10,7 @@
       MVVM&lt;BareKnuckleStyle&gt;  - ICommand implementations
     </description>
     <releaseNotes>
+      - 3.0.0 - netstandard1.0 assembly is now signed
       - 3.0.0 - added support for netstandard1.0
       - 2.1.0 - added explicit assemblies for .NET 3.0 and 4.0
       - 2.0.1 - added NET20, ICommand&lt;T&gt; and INotificationCommand&lt;T&gt;
@@ -51,12 +52,14 @@
           target="lib\net40" />
 
     <file src="bin\lib\portable45\Blue.MVVM.Commands.*"
+          target="lib\net45" />
+    <file src="bin\lib\portable45\Blue.MVVM.Commands.*"
           target="lib\MonoAndroid403" />
 
     <file src="bin\lib\portable40\Blue.MVVM.Commands.*"
           target="lib\portable-net40+sl5" />
 
-    <file src="bin\lib\netstandard10\Blue.MVVM.Commands.*" 
+    <file src="bin\lib\netstandard10\Blue.MVVM.Commands.*"
           target="lib\netstandard1.0" />
   </files>
 </package>
