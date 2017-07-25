@@ -20,7 +20,7 @@
 - 2.0.0 - initial extraction out of Blue.MVVM</PackageReleaseNotes>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <SignAssembly>True</SignAssembly>
-    <AssemblyOriginatorKeyFile>C:\working\git\eSc\Blue.MVVM.Commands\Blue.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\Blue.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <ItemGroup>
