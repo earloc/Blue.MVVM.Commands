@@ -16,18 +16,5 @@ namespace Blue.MVVM.Commands {
         public Command(Action execute, Func<bool> canExecute = null)
             : base(execute, canExecute) {
         }
-
-        /// <summary>
-        /// gets or sets a value indicating wheter newly created Commands support reentrany on execution. The default value is false
-        /// </summary>
-        [Obsolete("Use CommandBase.IsReentranceEnabledByDefault instead")]
-        public static bool IsReentranceEnabledByDefault {
-            get {
-                return CommandBase.IsReentranceEnabledByDefault;
-            }
-            set {
-                CommandBase.IsReentranceEnabledByDefault = value;
-            }
-        }
     }
 }

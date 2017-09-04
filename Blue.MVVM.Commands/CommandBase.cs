@@ -7,7 +7,7 @@ namespace Blue.MVVM.Commands {
     /// <summary>
     /// non-generic command implementation. Logic for Execute and CanExecute has to be implemented in derived types
     /// </summary>
-    public abstract class CommandBase : CommandBase<object> {
+    public abstract class CommandBase : CommandBase<object, object> {
 
         /// <summary>
         /// gets or sets a value indicating wheter newly created Commands support reentrany on execution. The default value is false

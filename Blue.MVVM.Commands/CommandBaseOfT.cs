@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Blue.MVVM.Commands {
+    public abstract class CommandBase<T> : CommandBase<T, object> {
+
+    }
     /// <summary>
     /// generic command implementation. Logic for Execute and CanExecute has to be implemented in derived types
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public abstract class CommandBase<T> : INotificationCommand<T> {
+    public abstract class CommandBase<TParam, TResult> : INotificationCommand<TParam, TResult> {
         
         public CommandBase() {
             IsReentranceEnabled = CommandBase.IsReentranceEnabledByDefault;
@@ -46,14 +49,14 @@ namespace Blue.MVVM.Commands {
             });
         }
 
-        private T Getparameter(object parameter) {
+        private TParam Getparameter(object parameter) {
             if (parameter == null)
-                return default(T);
+                return default(TParam);
             try {
-                return (T)parameter;
+                return (TParam)parameter;
             }
             catch (InvalidCastException ex) {
-                var expected    = typeof(T);
+                var expected    = typeof(TParam);
                 var actual      = parameter.GetType();
 
                 throw new InvalidCastException($"expected parameter of type '{expected.FullName}', but was '{actual.FullName}'", ex);
@@ -65,13 +68,13 @@ namespace Blue.MVVM.Commands {
         /// </summary>
         /// <param name="parameter">The parameter.</param>
         /// <returns></returns>
-        public virtual bool CanExecute(T parameter) => true;
+        public virtual bool CanExecute(TParam parameter) => true;
 
         /// <summary>
         /// In a derived class, executes the command´s logic
         /// </summary>
         /// <param name="parameter">The parameter.</param>
-        public abstract void Execute(T parameter);
+        public abstract TResult Execute(TParam parameter);
 
         public void NotifyCanExecuteChanged() => CanExecuteChanged?.Invoke(this, EventArgs.Empty);
 
@@ -80,10 +83,10 @@ namespace Blue.MVVM.Commands {
         /// </summary>
         public event EventHandler CanExecuteChanged;
 
-        protected void OnExecuting(T parameter) => Executing?.Invoke(this, EventArgs.Empty);
+        protected void OnExecuting(TParam parameter) => Executing?.Invoke(this, EventArgs.Empty);
         public event EventHandler Executing;
 
-        protected void OnExecuted(T parameter) => Executed?.Invoke(this, EventArgs.Empty);
+        protected void OnExecuted(TParam parameter) => Executed?.Invoke(this, EventArgs.Empty);
         public event EventHandler Executed;
 
         private void WhileBlockingReentrance(Action action) {
